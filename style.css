@@ -1,0 +1,20 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 200vh;
+}
+
+#progressBar {
+  position: fixed;
+  background: linear-gradient(to right, #94bbe9, #eeaeca);
+  height: 9px;
+  top: 0;
+  left: 0;
+  width: 0%;
+  z-index: 1000;
+  transition: width 0.2s ease-out;
+}
