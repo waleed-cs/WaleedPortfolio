@@ -1,20 +1,277 @@
+@import url("http://fonts.cdnfonts.com/css/vonique-92");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap");
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  scrollbar-width: thin;
+  scrollbar-color: #6861e2 #1c4069;
 }
-
+html {
+  scroll-behavior: smooth;
+}
 body {
-  height: 250vh;
+  height: 200vh;
+  font-family: "Roboto", sans-serif;
 }
 
-#progressBar {
+.landing {
+  position: relative;
+}
+
+main {
+  height: 75vh;
+  background: #1c4069;
+  display: flex;
+  color: white;
+  justify-content: space-evenly;
+  align-items: center;
+  position: relative;
+}
+
+main::after {
+  content: "";
+  position: absolute;
+  height: 100px;
+  bottom: -60px;
+  right: 0;
+  left: 0;
+  background-color: #fff;
+  transform: skewY(-3deg);
+}
+
+.slider {
+  background-color: #6861e2;
+  width: 100%;
+  height: 100vh;
   position: fixed;
-  background: linear-gradient(to right, #94bbe9, #eeaeca);
-  height: 9px;
   top: 0;
   left: 0;
-  width: 0%;
-  z-index: 1000;
-  transition: width 0.2s ease-out;
+  z-index: 5;
+}
+
+.text {
+  text-transform: capitalize;
+}
+
+.text > .hide {
+  overflow: hidden;
+}
+
+.hide > span {
+  transform: translateY(100%);
+  display: inline-block;
+}
+
+.text > h2 {
+  margin-top: 0.5rem;
+}
+svg {
+  max-width: 100%;
+  height: auto;
+}
+
+/* #94bbe9, #eeaeca */
+
+#Logo > a {
+  font-family: "Vonique 92", sans-serif;
+  text-decoration: none;
+  color: black;
+  font-size: 1.2rem;
+  margin-left: 1rem;
+  margin-top: 1rem;
+}
+
+nav {
+  height: 8vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+ul {
+  width: 40%;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+ul > li {
+  list-style: none;
+}
+
+ul > li > a {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+  text-transform: capitalize;
+}
+
+.goUp {
+  padding: 0.75rem;
+  border-radius: 50%;
+  background-color: #1c4069;
+  color: rgb(243, 243, 243);
+  width: max-content;
+  position: fixed;
+  bottom: 2%;
+  right: -10%;
+  cursor: pointer;
+  transition: all 0.5s ease-out;
+}
+.goUp:active {
+  transform: scale(0.8);
+}
+.goUp.show {
+  right: 1%;
+}
+
+/* styling about me section*/
+
+#aboutMe {
+  display: block;
+  width: max-content;
+  margin: 10rem auto;
+  text-align: center;
+  opacity: 0;
+  transition: opacity 0.75s ease-out;
+}
+
+#aboutMe.show {
+  opacity: 1;
+}
+
+#aboutMe > h1 {
+  margin-bottom: 1rem;
+}
+
+#aboutMe > h5 {
+  margin: 0.75rem 0;
+  font-weight: 500;
+  width: 50vw;
+  line-height: 1.2rem;
+}
+
+.img > img {
+  width: 200px;
+  max-width: 100%;
+  height: auto;
+  border-radius: 50%;
+}
+
+h4 {
+  margin: 0.75rem 0rem;
+}
+
+.aboutMeDescription {
+  text-transform: capitalize;
+}
+
+/* styling technical skills section*/
+
+#techSkills {
+  min-height: 40vh;
+  background-color: rgb(235, 235, 235);
+}
+.tech_title {
+  text-align: center;
+}
+.tech_parent {
+  min-height: 5vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  flex-wrap: wrap;
+  transform: translateY(-500);
+}
+
+.card {
+  background-color: #ffffff;
+  opacity: 0.9;
+  text-align: center;
+  margin: 1rem;
+  padding: 1rem;
+  border-radius: 5px;
+  transition: transform 0.5s ease-out;
+}
+
+i {
+  transition: color 0.5s ease;
+}
+
+.card:hover {
+  transform: scale(1.2);
+}
+
+.card:hover > .fa-html5 {
+  color: #fd7e14;
+}
+
+.card:hover > .fa-css3-alt {
+  color: #4c6ef5;
+}
+
+.card:hover > .fa-js {
+  color: #f0db4f;
+}
+.card:hover > .fa-angular {
+  color: #b52e31;
+}
+
+.card:hover > .fa-sass {
+  color: #c69;
+}
+
+#projects {
+  min-height: 100vh;
+}
+
+.cards_parent {
+  min-height: 50vh;
+}
+
+.p_card {
+  border: 2px solid black;
+  width: max-content;
+  text-align: center;
+  margin: 1rem;
+  position: relative;
+  padding: 1rem;
+  border-radius: 5px;
+}
+
+.p_card > img {
+  width: 20vw;
+}
+
+.pname {
+  text-transform: capitalize;
+}
+
+.buttons {
+  height: 27.6vh;
+  width: 100%;
+  background-color: #6861e2;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transition: opacity 0.5s ease-out;
+  border-radius: 5px;
+}
+
+.buttons:hover {
+  opacity: 1.1;
+}
+.buttons > a {
+  margin-left: 1rem;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: rgb(247, 247, 247);
+}
+.buttons:hover > a {
+  opacity: 1;
 }
