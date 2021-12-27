@@ -1,4 +1,4 @@
-@import url("http://fonts.cdnfonts.com/css/vonique-92");
+@import url("https://fonts.cdnfonts.com/css/vonique-92");
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap");
 * {
   margin: 0;
@@ -359,11 +359,6 @@ footer {
     margin-left: 0.5rem;
     font-size: 70%;
     line-height: 1.8rem;
-  }
-
-  body {
-    overflow-x: hidden;
-    overflow-y: scroll;
   }
 
   nav > ul {
