@@ -361,9 +361,9 @@ footer {
     line-height: 1.8rem;
   }
 
-  body,
-  html {
+  body {
     overflow-x: hidden;
+    overflow-y: scroll;
   }
 
   nav > ul {
