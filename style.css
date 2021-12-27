@@ -361,7 +361,8 @@ footer {
     line-height: 1.8rem;
   }
 
-  body {
+  body,
+  html {
     overflow-x: hidden;
   }
 
