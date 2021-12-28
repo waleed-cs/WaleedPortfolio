@@ -422,4 +422,8 @@ footer > p {
     width: max-content;
     display: block;
   }
+
+  .goUp.show {
+    display: none !important;
+  }
 }
