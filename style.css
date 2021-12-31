@@ -368,7 +368,7 @@ footer > p {
 
   body {
     overflow-x: hidden;
-    max-width: 100%;
+    width: 100%;
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
@@ -436,4 +436,9 @@ footer > p {
   .goUp.show {
     display: none !important;
   }
+}
+
+.wrapper {
+  overflow-x: hidden;
+  position: relative;
 }
