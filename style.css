@@ -429,9 +429,10 @@ footer > p {
   .goUp.show {
     display: none !important;
   }
-}
 
-.wrapper {
-  overflow-x: hidden;
-  position: relative;
+  .wrapper {
+    overflow-x: hidden;
+    position: relative;
+    scroll-behavior: smooth;
+  }
 }
