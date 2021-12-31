@@ -361,6 +361,9 @@ footer > p {
 }
 
 @media all and (max-width: 768px) {
+  html {
+    scroll-behavior: smooth;
+  }
   .hide > span {
     margin-left: 0.5rem;
     font-size: 70%;
@@ -433,6 +436,5 @@ footer > p {
   .wrapper {
     overflow-x: hidden;
     position: relative;
-    scroll-behavior: smooth;
   }
 }
