@@ -296,6 +296,7 @@ i {
   transition: opacity 0.5s ease-out;
   border-radius: 5px;
   flex-wrap: wrap;
+  z-index: 10000;
 }
 
 .buttons:hover {
