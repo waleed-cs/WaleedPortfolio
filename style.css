@@ -137,6 +137,7 @@ ul > li > a {
 }
 .goUp.show {
   right: 1%;
+  z-index: 1000;
 }
 
 /* styling about me section*/
