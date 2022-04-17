@@ -235,6 +235,10 @@ i {
   color: #b52e31;
 }
 
+.card:hover > .fa-react {
+  color: #00d8ff;
+}
+
 .card:hover > .fa-sass {
   color: #c69;
 }
